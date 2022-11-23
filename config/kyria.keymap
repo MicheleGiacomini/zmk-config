@@ -13,7 +13,7 @@
 
 / {
   macros {
-         ZMK_MACRO(cssp.
+         ZMK_MACRO(cssp,
          wait-ms = <30>;
          tap-ms = <40>;
          bindings = <&macro_press &kp LCTRL>
