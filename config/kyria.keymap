@@ -11,23 +11,38 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+// / {
+//   macros {
+//     csagsp: csagsp {
+//     label = "C_A_S_G_SP";
+//     compatible = "zmk,behaviour_macro";
+//     #binding-cells = <0>;
+//     bindings
+//         = <&macro_press &kp LCTRL>
+//         , <&macro_press &kp LSHFT>
+//         , <&macro_press &kp LALT>
+//         , <&macro_press &kp LGUI>
+//         , <&macro_tap> &kp SPACE>
+//         , <&macro_release &kp LSHFT>
+//         , <&macro_release &kp LALT>
+//         , <&macro_release &kp LGUI>;
+//     };
+//   };
+// };
+
 / {
-  macros {
-    csagsp: csagsp {
-    label = "C_A_S_G_SP";
-    compatible = "zmk,behaviour_macro";
-    #binding-cells = <0>;
-    bindings
-        = <&macro_press &kp LCTRL>
-        , <&macro_press &kp LSHFT>
-        , <&macro_press &kp LALT>
-        , <&macro_press &kp LGUI>
-        , <&macro_tap> &kp SPACE>
-        , <&macro_release &kp LSHFT>
-        , <&macro_release &kp LALT>
-        , <&macro_release &kp LGUI>;
+    macros {
+        csagsp: zed_em_kay {
+            label = "ZM_zed_em_kay";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
     };
-  };
 };
 
 / {
