@@ -7,6 +7,8 @@
 #define DEFT 0
 #define NUMB 1
 #define MOVE 2
+#define SYMB 3
+#define FUNC 4
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
