@@ -1,0 +1,23 @@
+#+title: Kyria keymap
+
+* Layers
+
+** Default
+
+[[./images/kyria_default.jpg]]
+
+** Move
+[[./images/kyria_move.jpg]]
+
+** Numb
+
+[[./images/kyria_numb.jpg]]
+
+
+** Symb
+
+[[./images/kyria_symb.jpg]]
+
+** Func
+
+[[./images/kyria_func.jpg]]
