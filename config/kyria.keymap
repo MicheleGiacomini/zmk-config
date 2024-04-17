@@ -17,14 +17,14 @@
 
 / {
     macros {
-        csagsp: csagsp {
-            label = "C_S_A_G_SP";
+        csagsp: af2 {
+            label = "AF2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
             bindings
-                = <&macro_tap &kp LC(LS(LA(LG(SPACE))))>;
+                = <&macro_tap &kp LA(F2)>;
         };
         scrsht: scrsht {
             label = "screenshot";
@@ -50,7 +50,7 @@
 			bindings = <
         &kp TAB   &kp Q &kp W &kp E    &kp R     &kp T                                                          &kp Y   &kp U     &kp I     &kp O   &kp P    &kp NUBS
         &kp ESC   &kp A &kp S &kp D    &kp F     &kp G                                                          &kp H   &kp J     &kp K     &kp L   &kp SEMI &kp SQT
-        &kp LSHFT &kp Z &kp X &kp C    &kp V     &kp B        &csagsp       &scrsht     &none    &none          &kp N   &kp M     &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+        &kp LSHFT &kp Z &kp X &kp C    &kp V     &kp B            &af2          &scrsht     &none    &none          &kp N   &kp M     &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                          &kp LGUI &kp LCTRL &lt NUMB DEL &lt MOVE BSPC &kp LALT    &kp RGUI &lt SYMB SPACE &lt FUNC RET &kp RCTRL &kp RGUI
 			>;
 
