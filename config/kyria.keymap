@@ -43,6 +43,35 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_search {
+            timeout-ms = <50>;
+            key-positions = <42 43>;
+            bindings = <&af2>;
+        };
+        combo_scrsht {
+            timeout-ms = <50>;
+            key-positions = <45 46>;
+            bindings = <&scrsht>;
+            layers = <0>;
+        };
+        combo_caps_word {
+            timeout-ms = <50>;
+            key-positions = <46 47>;
+            bindings = <&caps_word>;
+            layers = <0>;
+        };
+        combo_dot {
+            timeout-ms = <50>;
+            key-positions = <46 47>;
+            bindings = <&kp DOT>;
+            layers = <1>;
+        };
+    };
+};
+
+/ {
 	keymap {
 		compatible = "zmk,keymap";
 
