@@ -101,7 +101,7 @@
 	combo_thick_arrow_rev {
             timeout-ms = <50>;
             key-positions = <13 19 20>;
-            bindings = <&equal>;
+            bindings = <&eqal>;
             layers = <3>;
         };
     };
