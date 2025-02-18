@@ -21,32 +21,32 @@
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&macro_tap &kp LA(F2)>;
-    );	
+    )
     ZMK_MACRO(scrsht,
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&macro_tap &kp LG(LS(S))>;
-    );	
+    )	
     ZMK_MACRO(eqar,
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&macro_tap &kp EQUAL &kp LS(DOT)>;
-    );	
+    )	
     ZMK_MACRO(eqal,
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&macro_tap &kp LS(COMMA) &kp EQUAL>;
-    );	
+    )
     ZMK_MACRO(dhar,
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&macro_tap &kp MINUS &kp LS(DOT)>;
-    );
+    )
     ZMK_MACRO(dhal,
         wait-ms = <30>;
         tap-ms = <40>;
         bindings = <&kp LS(COMMA) &kp MINUS>;
-    );
+    )
     };
 };
 
