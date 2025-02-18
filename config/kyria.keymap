@@ -68,6 +68,30 @@
             bindings = <&kp DOT>;
             layers = <1>;
         };
+	combo_arrow {
+            timeout-ms = <50>;
+            key-positions = <19 29>;
+            bindings = <&kp MINUS &kp LS(DOT) >;
+            layers = <3>;
+        };
+	combo_arrow_rev {
+            timeout-ms = <50>;
+            key-positions = <19 20 29>;
+            bindings = <&kp MINUS &kp LS(COMMA) >;
+            layers = <3>;
+        };	
+	combo_thick_arrow {
+            timeout-ms = <50>;
+            key-positions = <13 19>;
+            bindings = <&kp EQUAL &kp LS(DOT) >;
+            layers = <3>;
+        };
+	combo_thick_arrow_rev {
+            timeout-ms = <50>;
+            key-positions = <13 19 20>;
+            bindings = <&kp EQUAL &kp LS(COMMA) >;
+            layers = <3>;
+        };
     };
 };
 
