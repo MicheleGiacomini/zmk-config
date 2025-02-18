@@ -26,7 +26,7 @@
             bindings
                 = <&macro_tap &kp LA(F2)>;
         };
-        scrsht: scrsht {
+	scrsht: scrsht {
             label = "screenshot";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -34,6 +34,42 @@
             tap-ms = <0>;
             bindings
                 = <&macro_tap &kp LG(LS(S))>;
+        };        
+	eqar: eqar {
+            label = "=>";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp EQUAL &kp LS(DOT)>;
+        };
+	eqal: eqal {
+            label = "<=";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(COMMA) &kp EQUAL>;
+        };
+	dhar: dhar {
+            label = "->";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp MINUS &kp LS(DOT)>;
+        };
+	dhal: dhal {
+            label = "<-";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_tap &kp LS(COMMA) &kp MINUS>;
         };
     };
 };
@@ -71,25 +107,25 @@
 	combo_arrow {
             timeout-ms = <50>;
             key-positions = <19 29>;
-            bindings = <&kp MINUS &kp LS(DOT) >;
+            bindings = <&dhar>;
             layers = <3>;
         };
 	combo_arrow_rev {
             timeout-ms = <50>;
             key-positions = <19 20 29>;
-            bindings = <&kp MINUS &kp LS(COMMA) >;
+            bindings = <&dhal>;
             layers = <3>;
         };	
 	combo_thick_arrow {
             timeout-ms = <50>;
             key-positions = <13 19>;
-            bindings = <&kp EQUAL &kp LS(DOT) >;
+            bindings = <&eqar>;
             layers = <3>;
         };
 	combo_thick_arrow_rev {
             timeout-ms = <50>;
             key-positions = <13 19 20>;
-            bindings = <&kp EQUAL &kp LS(COMMA) >;
+            bindings = <&equal>;
             layers = <3>;
         };
     };
@@ -124,7 +160,7 @@
         &kp LC(LS(Z)) &kp LC(Z)   &kp LC(A) &kp LC(V) &kp LC(C) &kp LC(X)                                         &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Z) &kp LC(LS(Z)) &none
         &trans        &kp LGUI    &kp LCTRL &kp LALT  &kp LSHFT &kp RET                                       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp LC(A)     &none
         &none         &none       &none     &none     &kp TAB   &none  &none  &none        &none  &caps_word  &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp INS       &none
-	                                        &trans    &trans    &trans &trans &trans       &trans &kp TAB     &kp RET   &trans    &trans
+	                                    &trans    &trans    &trans &trans &trans       &trans &kp TAB     &kp RET   &trans    &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
