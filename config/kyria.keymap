@@ -104,6 +104,12 @@
             bindings = <&eqal>;
             layers = <3>;
         };
+	combo_return_left_side {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp RET>;
+            layers = <0>;
+        };
     };
 };
 
