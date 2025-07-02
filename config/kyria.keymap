@@ -9,7 +9,7 @@
 #define MOVE 2
 #define SYMB 3
 #define FUNC 4
-#define MOUSE 4
+#define MOUSE 5
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -56,8 +56,8 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <MOVE SYMB>;
-            then-layer = <MOUSE>;
+            if-layers = <2 3>;
+            then-layer = <5>;
         };
     };
 };
