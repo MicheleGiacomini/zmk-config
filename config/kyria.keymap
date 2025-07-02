@@ -136,59 +136,46 @@
         &kp LSHFT     &kp Z &kp X &kp C    &kp V     &kp B        &af2          &scrsht     &none    &none          &kp N        &kp M     &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                                &kp LGUI &kp LCTRL &lt NUMB DEL &lt MOVE BSPC &kp LALT    &kp RGUI &lt SYMB SPACE &lt FUNC RET &kp RCTRL &kp RGUI
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
-        number_layer {
+    number_layer {
 			bindings = <
         &trans &none    &none     &none    &none     &none                                       &kp LPAR  &kp N7  &kp N8 &kp N9 &kp MINUS &none
         &trans &kp LGUI &kp LCTRL &kp LALT &kp LSHFT &kp RET                                     &kp RPAR  &kp N4  &kp N5 &kp N6 &kp STAR  &none
         &none  &none    &none     &none    &none     &none  &none  &none       &kp COMMA &kp DOT &kp EQUAL &kp N1  &kp N2 &kp N3 &kp FSLH  &none
                                   &trans   &trans    &trans &trans &trans      &kp RET   &kp N0  &kp PLUS  &trans  &trans
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
-        movement_layer {
+    movement_layer {
 			bindings = <
         &kp LC(LS(Z)) &kp LC(Z)   &kp LC(A) &kp LC(V) &kp LC(C) &kp LC(X)                                         &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Z) &kp LC(LS(Z)) &none
         &trans        &kp LGUI    &kp LCTRL &kp LALT  &kp LSHFT &kp RET                                       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp LC(A)     &none
         &none         &none       &none     &none     &kp TAB   &none  &none  &none        &none  &caps_word  &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp INS       &none
 	                                    &trans    &trans    &trans &trans &trans       &trans &kp TAB     &kp RET   &trans    &trans
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
-        symbol_layer {
+    symbol_layer {
 			bindings = <
         &trans   &kp AMPS  &kp GRAVE &kp LBRC &kp RBRC &kp LS(N2)                                    &none   &none     &kp RALT  &none     &none    &none
         &kp FSLH &kp EQUAL &kp CARET &kp LPAR &kp RPAR &kp DLLR                                      &kp RET &kp LSHFT &kp LALT  &kp LCTRL &kp LGUI &none
         &none    &kp NUHS  &kp PRCNT &kp LBKT &kp RBKT &kp MINUS &none     &none       &none  &none  &none   &none     &none     &none     &none    &none
 	                                 &trans   &trans   &kp PLUS  &kp UNDER &kp STAR    &trans &trans &trans  &trans    &trans
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
-        function_layer {
+    function_layer {
 			bindings = <
         &trans &kp F9 &kp F10 &kp F11 &kp F12 &none                                              &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
         &trans &kp F5 &kp F6  &kp F7  &kp F8  &none                                              &kp RET       &kp LSHFT    &kp LALT     &kp LCTRL    &kp LGUI     &none
         &none  &kp F1 &kp F2  &kp F3  &kp F4  &none  &bt BT_CLR &none     &none  &bt BT_CLR_ALL  &none         &none        &none        &none        &none        &studio_unlock
 	                          &trans  &trans  &trans &trans &trans    &trans &trans          &trans        &trans       &trans
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
-
-        function_layer {
+    mouse_layer {
 			bindings = <
         &none &none &none          &msc SCRL_UP   &none           &none                            &none &none          &mmv MOVE_UP   &none           &none &none 
         &none &none &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &none                            &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &none
         &none &none &none          &none          &none           &none &none &none    &none &none &none &mkp LCLK      &mkp RCLK      &mkp MCLK       &none &none
 	                                 &none          &none           &none &none &none    &none &none &none &none          &none
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 	};
 };
