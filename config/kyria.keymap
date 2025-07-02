@@ -151,7 +151,7 @@
         &kp LC(LS(Z)) &kp LC(Z)   &kp LC(A) &kp LC(V) &kp LC(C) &kp LC(X)                                         &kp LC(X) &kp LC(C) &kp LC(V) &kp LC(Z) &kp LC(LS(Z)) &none
         &trans        &kp LGUI    &kp LCTRL &kp LALT  &kp LSHFT &kp RET                                       &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp LC(A)     &none
         &none         &none       &none     &none     &kp TAB   &none  &none  &none        &none  &caps_word  &kp HOME  &kp PG_DN &kp PG_UP &kp END   &kp INS       &none
-	                                    &trans    &trans    &trans &trans &trans       &trans &kp TAB     &kp RET   &trans    &trans
+	                                    &trans    &trans    &trans &trans &trans       &trans &lt SYMB TAB     &kp RET   &trans    &trans
 			>;
 		};
     symbol_layer {
@@ -159,7 +159,7 @@
         &trans   &kp AMPS  &kp GRAVE &kp LBRC &kp RBRC &kp LS(N2)                                    &none   &none     &kp RALT  &none     &none    &none
         &kp FSLH &kp EQUAL &kp CARET &kp LPAR &kp RPAR &kp DLLR                                      &kp RET &kp LSHFT &kp LALT  &kp LCTRL &kp LGUI &none
         &none    &kp NUHS  &kp PRCNT &kp LBKT &kp RBKT &kp MINUS &none     &none       &none  &none  &none   &none     &none     &none     &none    &none
-	                                 &trans   &trans   &kp PLUS  &kp UNDER &kp STAR    &trans &trans &trans  &trans    &trans
+	                                 &trans   &trans   &kp PLUS  &lt MVE UNDER &kp STAR    &trans &trans &trans  &trans    &trans
 			>;
 		};
     function_layer {
